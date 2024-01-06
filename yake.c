@@ -34,6 +34,14 @@ void ex(int *v, char *syn){
                 st = 0; // auto switch back to st=0
             } break;
 
+            case 58: // ascii to string
+                     // length of string to be printed is
+                     // to be stored in v
+                     for (int i=0;i<*v;++i){printf("%c",*p);++p;}
+
+                     printf("\n");
+                     break;
+
             default: printf("synerr\n"); return;
         }
         //printf("P @ %p : %d | m : %d\n", p, *p, st);

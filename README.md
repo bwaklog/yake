@@ -43,6 +43,13 @@ $ ./yake "++.<<."
 <img width="600" alt="Screenshot 2024-01-06 at 10 09 19 PM" src="https://github.com/bwaklog/yake/assets/91192289/4384f71d-1a19-45c3-9cc4-b6e8e6f13d83">
 
 
+**Wanna print a string, well time to learn your asciis**
+
+```zsh
+$ ./yake "+<<<<<<++++++++@@+@+@>---@+@&--&>>>>-:"
+HI!
+```
+
 **Operations**
 
 Starting value : `0`
@@ -62,5 +69,6 @@ Starting value : `0`
 |<kbd>&</kbd>|Move pointer and get value|
 |<kbd>@</kbd>|Move pointer and store value|
 |<kbd>%</kbd>|% followed by <kbd>+</kbd> or <kbd>-</kbd> adds the current pointer address value to `v`|
+|<kbd>:</kbd>|Print out letters for range `v`...yeah the same `v` you have been using upto now|
 
 
