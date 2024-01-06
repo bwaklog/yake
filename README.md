@@ -18,11 +18,26 @@ $ ./yake "++.<<."
 
 ```zsh
 &v : 2 | 0x6000005c9260 -> 0
-&v : 2 | 0x6000005c9260 -> 2
+&v : 2 | 0x6000005c9260 -> 2 
 &v : 4 | 0x6000005c9260 -> 2
 &v : 4 | 0x6000005c9264 -> 4
 &v : 2 | 0x6000005c9260 -> 2
 ```
+
+**Arithmetic (Boolean) operations**
+```zsh
+./yake"+@@.<<.@+@.&-.%+."
+```
+
+*visual output*
+```
+&v : 1 | 0x6000032cd260 -> 1 | m = 0
+&v : 4 | 0x6000032cd260 -> 1 | m = 0
+&v : 4 | 0x6000032cd264 -> 4 | m = 0
+&v : 4 | 0x6000032cd260 -> 1 | m = 1
+&v : 5 | 0x6000032cd260 -> 1 | m = 0
+```
+
 
 **Operations**
 
@@ -42,5 +57,6 @@ Starting value : `0`
 |<kbd>.</kbd>|Display current value (equ. fxn is printf)|
 |<kbd>&</kbd>|Move pointer and get value|
 |<kbd>@</kbd>|Move pointer and store value|
+|<kbd>%</kbd>|% followed by <kbd>+</kbd> or <kbd>-</kbd> adds the current pointer address value to `v`|
 
 
