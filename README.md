@@ -15,4 +15,4 @@ Starting value : `0`
 |<kbd>+</kbd>|Increment|
 |<kbd>-</kbd>|Decrement|
 |<kbd><</kbd>|Left Shift|
-|<kbd>><\kbd>|Right Shift|
+|<kbd>></kbd>|Right Shift|
