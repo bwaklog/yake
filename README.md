@@ -38,6 +38,10 @@ $ ./yake "++.<<."
 &v : 5 | 0x6000032cd260 -> 1 | m = 0
 ```
 
+**Explanation**
+
+<img width="600" alt="Screenshot 2024-01-06 at 10 09 19 PM" src="https://github.com/bwaklog/yake/assets/91192289/4384f71d-1a19-45c3-9cc4-b6e8e6f13d83">
+
 
 **Operations**
 
