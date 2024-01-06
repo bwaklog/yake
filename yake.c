@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int opr(char *v);
 void ex(int *p, char *syn);
@@ -10,11 +9,9 @@ int main(int ac, char *av[]) {
 }
 
 void ex(int *v, char *syn){
-    //int *p;
-    int *p = malloc(8*sizeof(int));
+    int *p;
     int st = 0; // 0 for value control, 1 for pointer control
     while ((int)*syn!='\0'){
-        //printf("P @ %p : %d | m : %d\n", p, *p, st);
         switch ((int)*syn) {
             case 46: printf("&v : %d | %p -> %d | m = %d\n", *v, p, *p, st); break;
             case 43: if(st!=1){++*v;}else{++p;} break;
@@ -44,7 +41,6 @@ void ex(int *v, char *syn){
 
             default: printf("synerr\n"); return;
         }
-        //printf("P @ %p : %d | m : %d\n", p, *p, st);
         syn++;
     }
     return;
