@@ -34,6 +34,7 @@ Starting value : `0`
 |<kbd>-</kbd>|Decrement|
 |<kbd><</kbd>|Left Shift|
 |<kbd>></kbd>|Right Shift|
+
 **Methods**
 
 |sym|meothod description|
