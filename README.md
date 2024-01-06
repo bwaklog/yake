@@ -2,11 +2,13 @@
 [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck) lang but shittier (ongoing proj.)
 
 ```zsh
-$ ./yake "++<<"
+$ make yake
+$ ./yake "++.<<."
+2
 8
 ```
 
-Operations
+**Operations**
 
 Starting value : `0`
 
@@ -16,3 +18,9 @@ Starting value : `0`
 |<kbd>-</kbd>|Decrement|
 |<kbd><</kbd>|Left Shift|
 |<kbd>></kbd>|Right Shift|
+
+**Methods**
+
+|sym|meothod description|
+|---|---|
+|<kbd>.</kbd>|Display current value (equ. fxn is printf)|

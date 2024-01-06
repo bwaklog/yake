@@ -11,6 +11,7 @@ int main(int ac, char *av[]) {
 void ex(int *v, char *syn){
     while ((int)*syn!='\0'){
         switch ((int)*syn) {
+            case 46: printf("%d\n", *v); break;
             case 43: ++*v; break;
             case 45: --*v; break;
             case 60: *v = *v<<1; break;
@@ -19,6 +20,5 @@ void ex(int *v, char *syn){
         }
         syn++;
     }
-    printf("%d\n", *v);
     return;
 }
